@@ -1,0 +1,32 @@
+{
+  "name": "askme",
+  "version": "1.0.0",
+  "description": "Application for online consulting in IT sphere",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node ./src/app.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EgorHotko/AskMe.git"
+  },
+  "author": "Yahor Khatsko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EgorHotko/AskMe/issues"
+  },
+  "homepage": "https://github.com/EgorHotko/AskMe#readme",
+  "dependencies": {
+    "@nestjs/common": "^6.11.6",
+    "@nestjs/core": "^6.11.6",
+    "@nestjs/platform-express": "^6.11.6",
+    "@types/node": "^13.7.0",
+    "reflect-metadata": "^0.1.13",
+    "rxjs": "^6.5.4",
+    "typescript": "^3.7.5"
+  },
+  "devDependencies": {
+    "ts-node": "^8.6.2"
+  }
+}
