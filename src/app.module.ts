@@ -1,8 +1,7 @@
-import {Module} from "@nestjs/common";
+import { Module } from '@nestjs/common';
+import { RestModule } from './services/RESTService/IoC/rest.module';
 
 @Module({
-  imports: [],
-  providers: [],
-  exports: []
+  imports: [RestModule],
 })
 export class AppModule {}
