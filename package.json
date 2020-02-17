@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "ts-node ./src/app.ts"
+    "start": "ts-node ./src/app.ts",
+    "create-migration": "db-migrate create --config src/providers/DatabaseProvider/config/database.json --",
+    "migrate": "db-migrate up --config src/providers/DatabaseProvider/config/database.json"
   },
   "repository": {
     "type": "git",
@@ -22,6 +24,9 @@
     "@nestjs/core": "^6.11.6",
     "@nestjs/platform-express": "^6.11.6",
     "@types/node": "^13.7.0",
+    "db-migrate": "^0.11.6",
+    "db-migrate-pg": "^1.0.0",
+    "db-migrate-plugin-typescript": "^2.0.0",
     "dotenv": "^8.2.0",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^6.5.4",
@@ -29,6 +34,7 @@
     "typescript": "^3.7.5"
   },
   "devDependencies": {
+    "@types/db-migrate-base": "0.0.6",
     "@types/slonik": "^22.1.0",
     "@typescript-eslint/eslint-plugin": "^2.19.2",
     "@typescript-eslint/parser": "^2.19.2",
